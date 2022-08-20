@@ -37,6 +37,16 @@
     </script>
     <!-- Begin Script for Countdown -->
 
+    <!-- Begin Script for Audio Play -->
+    <script>
+      var audio = new Audio('audio/sepatu.mp3')
+      function play() {
+        if(audio.paused) {audio.currentTime=0;audio.play()}
+                   else  audio.pause();
+    }
+    </script>  
+    <!-- Begin Script for Audio Play -->    
+
     <!-- Github Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
@@ -105,7 +115,13 @@
                 Megamendung, Kab. Bogor
               
             </h4>
+            <a href="#regular-section">
+            <img src="image/play.png" width="75px" value="PLAY" onclick="play()">
+            </a>   
+
           </div>
+        
+
           <!-- Start Countdown -->       
           <div>
             <ul id="hitungmundur" >
@@ -186,7 +202,7 @@
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
           Assalamu'alaikum Warahmatullahi Wabarakatuh.
           <br />
-          Dengan memohon rahmat dan ridha Allah swt, 
+          Dengan memohon rahmat dan ridha Allah SWT, 
           <br />
           kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
         </p>
@@ -198,10 +214,12 @@
           <div class="nama-lengkap" >
             Siti Zulfa
           </div>
+          <div class="namaorangtua"> Putri dari Bapak Adun Abdullah dan Ibu Aam Aminah</div>
           <div class="ampersand">&</div>
           <div class="nama-lengkap">
           Muhammad Jayadi Anwar
           </div>
+          <div class="namaorangtua"> Putra dari Bapak Iwan Anwar dan Ibu (Almh) Teti Sugiarti</div>
            
         </div>
         <span class="space40px"></span>
@@ -456,6 +474,8 @@
         <a href="https://www.netlify.com">
           <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
         </a>
+        <br>
+        <a style="color: white" href="https://www.youtube.com/watch?v=2S3ABBQrDnY">Sepatu - Tulus Cover By Mr.HeadBox</a>
       </div>
     </div>
     <!-- End Footer -->
