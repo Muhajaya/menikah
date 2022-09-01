@@ -119,7 +119,9 @@
             <script>
               var url = new URL(window.location.href);
               var to = url.searchParams.get("to");
-              document.getElementById("to").innerHTML = "Teruntuk: "+to; 
+              if (to !== null){
+                document.getElementById("to").innerHTML = "Teruntuk: " + to; 
+              }
             </script>
             <a href="#regular-section">
             <img src="image/play.png" width="75px" value="PLAY" onclick="play()">
