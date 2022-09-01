@@ -115,12 +115,11 @@
                 Megamendung, Kab. Bogor
               
             </h4>
-            <h4 class="teruntuk">Teruntuk:</h4>
-            <h4 id="kepada" class="undangan">kepada</h4>
+            <h4 id="to" class="undangan"></h4>
             <script>
               var url = new URL(window.location.href);
-              var kepada = url.searchParams.get("kepada");
-              document.getElementById("kepada").innerHTML = kepada; 
+              var to = url.searchParams.get("to");
+              document.getElementById("to").innerHTML = "Teruntuk: "+to; 
             </script>
             <a href="#regular-section">
             <img src="image/play.png" width="75px" value="PLAY" onclick="play()">
@@ -444,7 +443,7 @@
                 Stay safe & jaga kesehatan ya :)
                 </p>
      
-              <a href="https://api.whatsapp.com/send?phone=6285155077804&text=Halo%20Zulfa,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+              <a href="https://api.whatsapp.com/send?phone=6285156016653&text=Halo%20Zulfa,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
                 &nbsp;&nbsp;Kabari Zulfa
               </a>
@@ -480,6 +479,61 @@
         </div>
       </section>
       <!-- End RSVP Content -->
+
+     
+     <section class="section-light regular-section is-fullheight" id="tentang">
+      <div class="container">
+        <div class="columns is-multiline">  
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Kirim Hadiah</h1>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">Kehadiran dan Doa Restu Anda merupakan hadiah terbaik bagi kami.
+                <br>
+                Jika Anda masih ingin berbagi lebih banyak, Anda dapat melakukannya melalui :
+              </p>
+            
+              
+
+            <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+              <div class="column is-6 has-vertically-aligned-content">
+                <p class="is-larger has-text-centered">
+                    <div class="has-text-centered"><img src="image/Bank_Mandiri_logo_2016.svg" class="divider has-text-centered" alt="~~~"></div>
+                    <p class="h2 subtitle">No. Rekening : 1370006300405 an <br>Siti Zulfa</p>
+                    <button id="1370006300405" class="button btn-cta" onclick="copyText('1370006300405')" data-message="Berhasil disalin"  role="button">
+                      <i class="far fa-copy"></i>
+                      &nbsp;&nbsp;Copy No Rekening
+                    </button>
+                </p>            
+            
+              </div>
+              <div class="column is-6 has-vertically-aligned-content">
+                <p class="is-larger has-text-centered">
+                    <div class="has-text-centered"><img src="image/Bank_Syariah_Indonesia.svg" class="divider has-text-centered" alt="~~~"></div>
+                    <p class="h2 subtitle">No. Rekening : 7973188000 an <br>Muhammad Jayadi Anwar</p>
+
+                    <script>
+                      //If you want to copyText from Element
+                      function copyText(text) {
+                        navigator.clipboard.writeText(text);
+                        document.getElementById(text).innerHTML = "Sudah Disalin";
+                      }
+                    </script>
+                    <button id="7973188000" class="button btn-cta" onclick="copyText('7973188000')" data-message="Berhasil disalin"  role="button" >
+                      <i class="far fa-copy"></i>
+                      &nbsp;&nbsp;Copy No Rekening
+                    </button>
+                </p>            
+            
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>       
+    </section>
+
+
+
+
     </div>
     <!-- End Main Content -->
 
